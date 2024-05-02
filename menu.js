@@ -30,3 +30,39 @@ formulario.addEventListener('submit', function(e) {
   // - Console: apenas para teste (exemplo abaixo)
   console.log('Mensagem enviada:', mensagem);
 });
+
+const form = document.getElementById('contatoForm');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita o envio padrão do formulário
+
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    // Validação básica (opcional)
+    if (nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
+        alert('Preencha todos os campos!');
+        return;
+    }
+
+    // Envia os dados para o servidor
+    sendFormData(nome, email, mensagem);
+});
+
+function sendFormData(nome, email, mensagem) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://www.php.net/manual/en/tutorial.php'); // Substitua por URL do seu servidor
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            alert('Mensagem enviada com sucesso!');
+            form.reset(); // Limpa o formulário
+        } else {
+            alert('Erro ao enviar mensagem!');
+        }
+    };
+
+    xhr.send(`nome=${nome}&email=${email}&mensagem=${mensagem}`);
+}
