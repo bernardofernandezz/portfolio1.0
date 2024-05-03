@@ -92,6 +92,13 @@ header nav.menu-desktop ul li {
   padding: 0 40px;
 }
 
+.menu-desktop ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
 /* ESTILO DO MENU MOBILE */
 
 .btn-abrir-menu{
@@ -161,6 +168,28 @@ header nav.menu-desktop ul li {
   display: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .flex {
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    justify-content: center; /* Center items horizontally */
+  }
+  .especialidades-box {
+    text-align: center; /* Center text and image on mobile */
+  }
+  .habilidade-img {
+    margin-bottom: 10px; /* Add space between image and text */
+  }
+}
+
+/* Desktop Styles (optional, for further customization) */
+@media only screen and (min-width: 768px) {
+  .flex {
+    display: flex; /* Align items horizontally on desktop */
+    align-items: center; /* Vertically align content within boxes */
+  }
+}
+
+
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
   padding: 40px 4%;
@@ -222,8 +251,13 @@ section.especiliadades .flex {
 }
 .especialidades-box img {
   width: 150px;
-  padding-right: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
   
+}
+
+.especialidades-box h3 {
+  text-align: center;
 }
 
 

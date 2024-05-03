@@ -66,3 +66,4 @@ function sendFormData(nome, email, mensagem) {
 
     xhr.send(`nome=${nome}&email=${email}&mensagem=${mensagem}`);
 }
+
