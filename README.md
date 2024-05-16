@@ -18,5 +18,5 @@ Mais sobre mim:
 
 [https://github.com/bernardofernandezz] - GitHub
 [bernafernandeztx@gmail.com] - Email
-[https://www.linkedin.com/in/bernardo-fern%C3%A1ndez-62ba112a9/] - LinkedIn
+<a> href=https://www.linkedin.com/in/bernardo-fern%C3%A1ndez-62ba112a9/ </a> - LinkedIn
 [https://www.instagram.com/bernafernandezz/] - Instagram
