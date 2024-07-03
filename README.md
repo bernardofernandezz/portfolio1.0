@@ -1,5 +1,6 @@
 
-Portfólio - [Bernardo Fernandez]
+Portfólio 
+
 Olá!  Sou [Bernardo Fernandez], Um Desenvolvedor Front End em busca de novos desafios e oportunidades para crescer na área que me apaixona.
 
 Neste portfólio, você encontrará alguns dos meus projetos mais bacanas, demonstrando minhas habilidades e como posso agregar valor ao seu time.
