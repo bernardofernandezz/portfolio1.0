@@ -16,19 +16,19 @@ body {
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
 .logo:hover {
   transition: transform 0.5s ease;
   transform: scale(1.1);
   opacity: 0.7;
 }
 
-.flex {
-  display: flex;
-}
-
 .logo-footer img:hover {
-  filter: sepia(0.5); /* Exemplo de filtro para mudar para tom sépia */
-  opacity: 0.7; /* Exemplo de filtro para diminuir a opacidade */
+  filter: sepia(0.5);
+  opacity: 0.7;
   transition: 0.5s;
 }
 
@@ -98,7 +98,6 @@ header nav.menu-desktop ul li {
 }
 
 /* ESTILO DO MENU MOBILE */
-
 .btn-abrir-menu {
   display: none;
 }
@@ -165,32 +164,6 @@ header nav.menu-desktop ul li {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  .flex {
-    flex-wrap: wrap; /* Wrap items on smaller screens */
-    justify-content: center; /* Center items horizontally */
-  }
-  .especialidades-box
-    .especialidades-box-html
-    .especialidades-box-css
-    .especialidades-box-js
-    .especialidades-box-git
-    .especialidades-box-github {
-    text-align: center; /* Center text and image on mobile */
-  }
-  .habilidade-img {
-    margin-bottom: 10px; /* Add space between image and text */
-  }
-}
-
-/* Desktop Styles (optional, for further customization) */
-@media only screen and (min-width: 768px) {
-  .flex {
-    display: flex; /* Align items horizontally on desktop */
-    align-items: center; /* Vertically align content within boxes */
-  }
-}
-
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
   padding: 40px 4%;
@@ -254,81 +227,27 @@ section.especiliadades .flex {
   margin-top: 45px;
   transition: 0.2s;
 }
-/*Estilo das especialidades - HTML*/
-.especialidades-box-html {
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  padding: 50px;
-  border-radius: 20px;
-  margin-top: 45px;
-  transition: 0.2s;
-}
-/*Estilo das especialidades - CSS*/
-.especialidades-box-css {
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  padding: 50px;
-  border-radius: 20px;
-  margin-top: 45px;
-  transition: 0.2s;
-}
-/*Estilo das especialidades - JS*/
-.especialidades-box-js {
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  padding: 50px;
-  border-radius: 20px;
-  margin-top: 45px;
-  transition: 0.2s;
-}
-/*Estilo das especialidades - GIT*/
-.especialidades-box-git {
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  padding: 50px;
-  border-radius: 20px;
-  margin-top: 45px;
-  transition: 0.2s;
-}
-/*Estilo das especialidades - GITHUB*/
+
+/* Estilos específicos para cada especialidade */
+.especialidades-box-html,
+.especialidades-box-css,
+.especialidades-box-js,
+.especialidades-box-git,
 .especialidades-box-github {
   color: #fff;
   margin: 0;
-  padding: 0;
-  text-align: center;
   padding: 50px;
+  text-align: center;
   border-radius: 20px;
   margin-top: 45px;
+  transition: 0.2s;
 }
-/*Estilo das especialidades - IMAGENS*/
-.especialidades-box-html img {
-  width: 150px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.especialidades-box-css img {
-  width: 150px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.especialidades-box-js img {
-  width: 150px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.especialidades-box-git img {
-  width: 150px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
+
+/* Estilos das imagens das especialidades */
+.especialidades-box-html img,
+.especialidades-box-css img,
+.especialidades-box-js img,
+.especialidades-box-git img,
 .especialidades-box-github img {
   width: 150px;
   padding-left: 50px;
@@ -513,7 +432,6 @@ form .btn-enviar input {
 }
 
 /* ESTILO DO RODAPÉ */
-
 footer {
   padding: 40px 4%;
   box-shadow: 0 0 40px 10px #ffffff1d;
@@ -544,6 +462,7 @@ footer .line-footer p a {
   color: #fff;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 1020px) {
   /* CLASSES GERAIS */
   .flex {
@@ -566,7 +485,6 @@ footer .line-footer p a {
   }
 
   /* TOPO DO SITE */
-
   section.topo-do-site .flex {
     gap: 40px;
   }
@@ -630,5 +548,50 @@ footer .line-footer p a {
 
   footer .line-footer {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .especialidades-box
+    .especialidades-box-html
+    .especialidades-box-css
+    .especialidades-box-js
+    .especialidades-box-git
+    .especialidades-box-github {
+    text-align: center;
+  }
+  .habilidade-img {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  .especialidades-box
+    .especialidades-box-html
+    .especialidades-box-css
+    .especialidades-box-js
+    .especialidades-box-git
+    .especialidades-box-github {
+    text-align: center;
+  }
+
+  .especialidades-box
+    .especialidades-box-html
+    .especialidades-box-css
+    .especialidades-box-js
+    .especialidades-box-git
+    .especialidades-box-github
+    img {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
