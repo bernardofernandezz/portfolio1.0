@@ -11,7 +11,7 @@
 
   <script src="menu.js" defer></script>
   <link rel="shortcut icon" href="./assets/portfolio.png" />
-  <link rel="stylesheet" href="processar.php">
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <title>Portifólio - Bernardo Fernandez</title>
 </head>
@@ -50,7 +50,7 @@
                 <nav>
                     <ul>
                         <li><a href="#">Início</a></li>
-                        <li><a href=" #habilidades">Habilidades</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#portifolio">Projetos</a></li>
                         <li><a href="#formulario">Contato</a></li>
@@ -63,25 +63,19 @@
     </header>
 
     <main>
-        <section class="topo-do-site" id =topo>
-            <div class="interface">
-                <div class="flex">
+        <section class="topo-do-site bg-black text-white py-16" id="topo">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
                     <div class="txt-topo-site">
-                        <h1 style="padding-top: 10px;">Bernardo <span>Fernandez</span></h1>
-                        <h2 style="color: white; padding-top: 7px; padding-bottom: 5px;">Desenvolvedor Front-End</h2>
-
-                        <p style="padding: 0; font-size: 20px;">Olá, Me chamo Bernardo e Seja Bem vindo(a) ao Meu Portifólio!</p>
-                      
-                        <div class="btn-contato">
-                           
-                        </div>
-                    </div><!--txt-topo-site-->
-
+                        <h1 class="text-4xl font-bold mb-2">Bernardo <span class="text-primary">Fernandez</span></h1>
+                        <h2 class="text-2xl mb-4">Desenvolvedor Front-End</h2>
+                        <p class="text-lg mb-8">Olá, Me chamo Bernardo e Seja Bem vindo(a) ao Meu Portifólio!</p>
+                    </div>
                     <div class="img-topo-site">
-                        <img src="./assets/avatar.png" alt="">
-                    </div><!--img-topo-site-->
-                </div><!--flex-->
-            </div><!--interface-->
+                        <img src="./assets/avatar.png" alt="Avatar" class="w-full max-w-sm">
+                    </div>
+                </div>
+            </div>
         </section><!--topo-do-site-->
 
         <section class="especiliadades" id="habilidades">
