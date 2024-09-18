@@ -569,6 +569,18 @@ footer .line-footer p a {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .especialidades-box
+    .especialidades-box-html
+    .especialidades-box-css
+    .especialidades-box-js
+    .especialidades-box-git
+    .especialidades-box-github
+    img {
+    text-align: center;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .flex {
     display: flex;
