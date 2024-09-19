@@ -16,30 +16,19 @@ body {
   margin: 0 auto;
 }
 
-.flex {
-  display: flex;
-}
-
-h2.titulo {
-  color: #fff;
-  font-size: 38px;
-  text-align: center;
-}
-
-h2.titulo span {
-  color: #00ff08;
-}
-
-/* ELEMENTOS INTERATIVOS */
 .logo:hover {
   transition: transform 0.5s ease;
   transform: scale(1.1);
   opacity: 0.7;
 }
 
+.flex {
+  display: flex;
+}
+
 .logo-footer img:hover {
-  filter: sepia(0.5);
-  opacity: 0.7;
+  filter: sepia(0.5); /* Exemplo de filtro para mudar para tom sépia */
+  opacity: 0.7; /* Exemplo de filtro para diminuir a opacidade */
   transition: 0.5s;
 }
 
@@ -52,6 +41,16 @@ h2.titulo span {
   border-radius: 30px;
   cursor: pointer;
   transition: 0.2s;
+}
+
+h2.titulo {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.titulo span {
+  color: #00ff08;
 }
 
 button:hover,
@@ -99,6 +98,7 @@ header nav.menu-desktop ul li {
 }
 
 /* ESTILO DO MENU MOBILE */
+
 .btn-abrir-menu {
   display: none;
 }
@@ -165,6 +165,27 @@ header nav.menu-desktop ul li {
   display: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .flex {
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    justify-content: center; /* Center items horizontally */
+  }
+  .especialidades-box {
+    text-align: center; /* Center text and image on mobile */
+  }
+  .habilidade-img {
+    margin-bottom: 10px; /* Add space between image and text */
+  }
+}
+
+/* Desktop Styles (optional, for further customization) */
+@media only screen and (min-width: 768px) {
+  .flex {
+    display: flex; /* Align items horizontally on desktop */
+    align-items: center; /* Vertically align content within boxes */
+  }
+}
+
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
   padding: 40px 4%;
@@ -200,6 +221,7 @@ section.topo-do-site .flex {
   0% {
     top: 0;
   }
+
   100% {
     top: 30px;
   }
@@ -221,11 +243,10 @@ section.especiliadades .flex {
   margin-top: 45px;
   transition: 0.2s;
 }
-
 .especialidades-box img {
-  width: 60px;
-  display: block;
-  margin: 0 auto;
+  width: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .especialidades-box h3 {
@@ -385,6 +406,7 @@ form .btn-enviar input {
 }
 
 /* ESTILO DO RODAPÉ */
+
 footer {
   padding: 40px 4%;
   box-shadow: 0 0 40px 10px #ffffff1d;
@@ -415,7 +437,6 @@ footer .line-footer p a {
   color: #fff;
 }
 
-/* MEDIA QUERIES */
 @media screen and (max-width: 1020px) {
   /* CLASSES GERAIS */
   .flex {
@@ -438,6 +459,7 @@ footer .line-footer p a {
   }
 
   /* TOPO DO SITE */
+
   section.topo-do-site .flex {
     gap: 40px;
   }
@@ -501,25 +523,5 @@ footer .line-footer p a {
 
   footer .line-footer {
     text-align: center;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .flex {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .especialidades-box {
-    text-align: center;
-  }
-  .habilidade-img {
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .flex {
-    display: flex;
-    align-items: center;
   }
 }
