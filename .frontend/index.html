@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="style.css">
 
   <script src="menu.js" defer></script>
-  <link rel="shortcut icon" href="./assets/portfolio.png" />
-  <link rel="stylesheet" href="processar.php">
+  <link rel="shortcut icon" href="./assets/imgs//portfolio.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <title>Portifólio - Bernardo Fernandez</title>
 </head>
@@ -20,7 +20,7 @@
     <div class="interface">
       <div class="logo">
         <a href="#topo">
-          <img src="./assets/logo-2.png" alt="Logo Bernardo">
+          <img src="./assets/imgs//logo-2.png" alt="Logo Bernardo">
         </a>
       </div><nav class="menu-desktop">
         <ul>
@@ -59,9 +59,9 @@
     </header>
 
     <main>
-        <section class="topo-do-site" id =topo>
-            <div class="interface">
-                <div class="flex">
+        <section class="topo-do-site bg-black text-white py-16" id="topo">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
                     <div class="txt-topo-site">
                         <h1 class="text-4xl font-bold mb-2">Bernardo <span class="text-primary">Fernandez</span></h1>
                         <h2 class="text-2xl mb-4">Desenvolvedor Front-End</h2>
@@ -80,32 +80,40 @@
                
               <h2 class="titulo">MINHAS<span>HABILIDADES.</span></h2> 
               <div class="flex">
-                <div class="especialidades-box">
-                    
-                  <img src="./assets/html5.png" alt="HTML" class="habilidade-img"> <h3>HTML</h3>
+                
+                <div class="especialidades-box-html">
+                  <img src="./assets/imgs//html5.png" alt="HTML" class="habilidade-img"><h3 class="text-primary ">HTML</h3>
                   <p></p>
                 </div>
-                <div class="especialidades-box">
-                  <img src="./assets/css.png" alt="CSS" class="habilidade-img">
+
+                <div class="especialidades-box-css">
+                  <img src="./assets/imgs//css.png" alt="CSS" class="habilidade-img">
+
                   <h3>CSS</h3>
                   <p></p>
                 </div>
-                <div class="especialidades-box">
-                  <img src="./assets/js.png" alt="JavaScript" class="habilidade-img">
+
+                <div class="especialidades-box-js">
+                  <img src="./assets/imgs//js.png" alt="JavaScript" class="habilidade-img">
                   <h3>JavaScript</h3>
                   <p></p>
                 </div>
-                <div class="especialidades-box">
-                  <img src="./assets/git.png" alt="Git" class="habilidade-img">
+
+                <div class="especialidades-box-git">
+                  <img src="./assets/imgs//git.png" alt="Git" class="habilidade-img">
                   <h3>Git</h3>
                   <p></p>
                 </div>
-                <div class="especialidades-box">
-                  <img src="./assets/github.png" alt="GitHub" class="habilidade-img">
+
+                    <div class="especialidades-box-github">
+                  <img src="./assets/imgs//github.png" alt="GitHub" class="habilidade-img">
                   <h3>GitHub</h3>
                   <p></p>
                 </div>
-              </div></div></section>
+
+              </div>
+            </div>
+        </section>
               
           
           
